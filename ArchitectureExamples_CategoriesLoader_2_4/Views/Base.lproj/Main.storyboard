@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="98n-8M-0eW">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -8,18 +8,18 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="9Hr-9a-I0w">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ArchitectureExamples_CategoriesLoader_2_4" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="98n-8M-0eW" customClass="ViewController" customModule="ArchitectureExamples_CategoriesLoader_2_4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Suj-8n-Dsk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fAI-dr-lSW">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aun-6r-Enr">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CategoriesCell" rowHeight="80" id="kxs-sP-GW5" customClass="CategoriesTableViewCell" customModule="BlackStarWearDiplomaApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CategoriesCell" rowHeight="80" id="kxs-sP-GW5" customClass="CategoriesTableViewCell" customModule="ArchitectureExamples_CategoriesLoader_2_4" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kxs-sP-GW5" id="gGT-c0-cfs">
@@ -59,8 +59,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="categoriesImage" destination="Ml8-C0-gbp" id="4F2-X3-3jU"/>
-                                            <outlet property="titleLabel" destination="WHG-0b-P30" id="r7f-ef-YfQ"/>
+                                            <outlet property="categoriesImage" destination="Ml8-C0-gbp" id="J8X-Hi-MQz"/>
+                                            <outlet property="titleLabel" destination="WHG-0b-P30" id="hbg-LR-osv"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -68,17 +68,20 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="fAI-dr-lSW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2TH-ni-AmX"/>
-                            <constraint firstItem="fAI-dr-lSW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="33d-pZ-bPD"/>
-                            <constraint firstItem="fAI-dr-lSW" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="EMl-VO-ZCS"/>
-                            <constraint firstItem="fAI-dr-lSW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vfb-nf-DzA"/>
+                            <constraint firstItem="qqG-hq-pZ3" firstAttribute="trailing" secondItem="aun-6r-Enr" secondAttribute="trailing" id="7Md-kg-9Uv"/>
+                            <constraint firstItem="qqG-hq-pZ3" firstAttribute="bottom" secondItem="aun-6r-Enr" secondAttribute="bottom" id="V9H-jN-Jdn"/>
+                            <constraint firstItem="aun-6r-Enr" firstAttribute="leading" secondItem="qqG-hq-pZ3" secondAttribute="leading" id="lzE-Kx-hST"/>
+                            <constraint firstItem="aun-6r-Enr" firstAttribute="top" secondItem="qqG-hq-pZ3" secondAttribute="top" id="tm0-rH-iFN"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="qqG-hq-pZ3"/>
                     </view>
+                    <connections>
+                        <outlet property="categoriesTableView" destination="aun-6r-Enr" id="oU9-rv-tRY"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dFG-nt-cj7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.40000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="805.60000000000002" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>

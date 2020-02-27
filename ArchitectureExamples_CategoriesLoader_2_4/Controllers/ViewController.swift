@@ -8,13 +8,36 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+import Kingfisher
 
+class ViewController: UIViewController {
+    @IBOutlet weak var categoriesTableView: UITableView!
+    let categoriesViewModel = CategoriesViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        bindCategoriesToTableView()
+        categoriesViewModel.loadCategories(url: categoriesURL)
     }
-
+    
+    func bindCategoriesToTableView() {
+        categoriesViewModel.categoriesList.bind(to: categoriesTableView) { (dataSource, indexPath, tableView) -> UITableViewCell in
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CategoriesCell") as! CategoriesTableViewCell
+            
+            cell.titleLabel.text = dataSource[indexPath.row].name
+            
+            var url = URL(string: "\(defaultStartAddress)\(dataSource[indexPath.row].iconImage)")
+            
+            // При отсутствии картинки вставялем дефолтную
+            if dataSource[indexPath.row].iconImage.isEmpty {
+                url = URL(string: defaultImageURL)
+            }
+            
+            cell.categoriesImage.kf.setImage(with: url)
+            
+            return cell
+        }.dispose(in: reactive.bag)
+    }
 
 }
 
