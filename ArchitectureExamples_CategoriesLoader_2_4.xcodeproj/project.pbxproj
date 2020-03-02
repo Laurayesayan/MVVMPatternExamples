@@ -17,6 +17,9 @@
 		F703C00E2407ADC1004364F9 /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F703C00D2407ADC1004364F9 /* CategoriesViewModel.swift */; };
 		F703C0102407C4C3004364F9 /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F703C00F2407C4C3004364F9 /* CategoriesTableViewCell.swift */; };
 		F703C0122407F2C6004364F9 /* URLFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F703C0112407F2C6004364F9 /* URLFile.swift */; };
+		F703C01D240A5CD2004364F9 /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F703C01C240A5CD2004364F9 /* ToDoTableViewCell.swift */; };
+		F703C01F240A5DBE004364F9 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F703C01E240A5DBE004364F9 /* ToDoViewController.swift */; };
+		F703C021240A94F0004364F9 /* ToDoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F703C020240A94F0004364F9 /* ToDoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		F703C00D2407ADC1004364F9 /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
 		F703C00F2407C4C3004364F9 /* CategoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewCell.swift; sourceTree = "<group>"; };
 		F703C0112407F2C6004364F9 /* URLFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLFile.swift; sourceTree = "<group>"; };
+		F703C01C240A5CD2004364F9 /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
+		F703C01E240A5DBE004364F9 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
+		F703C020240A94F0004364F9 /* ToDoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,8 @@
 			children = (
 				F703BFF72406F9F3004364F9 /* ViewController.swift */,
 				F703C00F2407C4C3004364F9 /* CategoriesTableViewCell.swift */,
+				F703C01C240A5CD2004364F9 /* ToDoTableViewCell.swift */,
+				F703C01E240A5DBE004364F9 /* ToDoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -99,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				F703C00D2407ADC1004364F9 /* CategoriesViewModel.swift */,
+				F703C020240A94F0004364F9 /* ToDoViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -255,6 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F703C01F240A5DBE004364F9 /* ToDoViewController.swift in Sources */,
+				F703C021240A94F0004364F9 /* ToDoViewModel.swift in Sources */,
+				F703C01D240A5CD2004364F9 /* ToDoTableViewCell.swift in Sources */,
 				F703BFF82406F9F3004364F9 /* ViewController.swift in Sources */,
 				F703BFF42406F9F3004364F9 /* AppDelegate.swift in Sources */,
 				F703C00E2407ADC1004364F9 /* CategoriesViewModel.swift in Sources */,
