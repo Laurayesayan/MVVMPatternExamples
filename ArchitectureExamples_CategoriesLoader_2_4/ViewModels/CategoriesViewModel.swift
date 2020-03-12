@@ -30,18 +30,3 @@ class CategoriesViewModel {
     }
     
 }
-
-struct Categories {
-    let name: String
-    let iconImage: String
-    
-    init?(data: NSDictionary) {
-        guard let name = data["name"] as? String,
-            let iconImage = data["iconImage"] as? String else {
-                return nil
-        }
-        
-        self.name = name
-        self.iconImage = iconImage
-    }
-}

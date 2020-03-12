@@ -20,6 +20,8 @@
 		F703C01D240A5CD2004364F9 /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F703C01C240A5CD2004364F9 /* ToDoTableViewCell.swift */; };
 		F703C01F240A5DBE004364F9 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F703C01E240A5DBE004364F9 /* ToDoViewController.swift */; };
 		F703C021240A94F0004364F9 /* ToDoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F703C020240A94F0004364F9 /* ToDoViewModel.swift */; };
+		F79CECFA241AC3D000556B50 /* CategoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79CECF9241AC3D000556B50 /* CategoriesModel.swift */; };
+		F79CECFC241AC41C00556B50 /* PersistanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79CECFB241AC41C00556B50 /* PersistanceModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		F703C01C240A5CD2004364F9 /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
 		F703C01E240A5DBE004364F9 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
 		F703C020240A94F0004364F9 /* ToDoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewModel.swift; sourceTree = "<group>"; };
+		F79CECF9241AC3D000556B50 /* CategoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesModel.swift; sourceTree = "<group>"; };
+		F79CECFB241AC41C00556B50 /* PersistanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 		F703BFF22406F9F3004364F9 /* ArchitectureExamples_CategoriesLoader_2_4 */ = {
 			isa = PBXGroup;
 			children = (
+				F79CECF8241AC39E00556B50 /* Models */,
 				F703C0072406FA11004364F9 /* Controllers */,
 				F703C00C2406FB67004364F9 /* Delegates */,
 				F703C00B2406FAAB004364F9 /* Resources */,
@@ -138,6 +143,15 @@
 				F703BFF32406F9F3004364F9 /* AppDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		F79CECF8241AC39E00556B50 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F79CECF9241AC3D000556B50 /* CategoriesModel.swift */,
+				F79CECFB241AC41C00556B50 /* PersistanceModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		F9E05306D7D4DD7B58CC19F0 /* Pods */ = {
@@ -266,9 +280,11 @@
 			files = (
 				F703C01F240A5DBE004364F9 /* ToDoViewController.swift in Sources */,
 				F703C021240A94F0004364F9 /* ToDoViewModel.swift in Sources */,
+				F79CECFC241AC41C00556B50 /* PersistanceModel.swift in Sources */,
 				F703C01D240A5CD2004364F9 /* ToDoTableViewCell.swift in Sources */,
 				F703BFF82406F9F3004364F9 /* ViewController.swift in Sources */,
 				F703BFF42406F9F3004364F9 /* AppDelegate.swift in Sources */,
+				F79CECFA241AC3D000556B50 /* CategoriesModel.swift in Sources */,
 				F703C00E2407ADC1004364F9 /* CategoriesViewModel.swift in Sources */,
 				F703C0122407F2C6004364F9 /* URLFile.swift in Sources */,
 				F703BFF62406F9F3004364F9 /* SceneDelegate.swift in Sources */,
